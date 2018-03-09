@@ -27,6 +27,7 @@ class InputViewController: UIViewController {
         if (segue.identifier == "calculate") {
             let outputViewController = segue.destination as! OutputViewController
             outputViewController.result = inputDatePicker.date.description
+            
         }
     }
 
