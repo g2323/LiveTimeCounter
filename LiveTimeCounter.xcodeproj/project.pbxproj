@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49605572204AA92A00058D43 /* OutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49605571204AA92A00058D43 /* OutputViewController.swift */; };
 		4A6306D32049CCF80002B61A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6306D22049CCF80002B61A /* AppDelegate.swift */; };
-		4A6306D52049CCF80002B61A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6306D42049CCF80002B61A /* ViewController.swift */; };
+		4A6306D52049CCF80002B61A /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6306D42049CCF80002B61A /* InputViewController.swift */; };
 		4A6306D82049CCF80002B61A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A6306D62049CCF80002B61A /* Main.storyboard */; };
 		4A6306DA2049CCF80002B61A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A6306D92049CCF80002B61A /* Assets.xcassets */; };
 		4A6306DD2049CCF80002B61A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A6306DB2049CCF80002B61A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49605571204AA92A00058D43 /* OutputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputViewController.swift; sourceTree = "<group>"; };
 		4A6306CF2049CCF70002B61A /* LiveTimeCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveTimeCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A6306D22049CCF80002B61A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A6306D42049CCF80002B61A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A6306D42049CCF80002B61A /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		4A6306D72049CCF80002B61A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A6306D92049CCF80002B61A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A6306DC2049CCF80002B61A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				4A6306D22049CCF80002B61A /* AppDelegate.swift */,
-				4A6306D42049CCF80002B61A /* ViewController.swift */,
+				4A6306D42049CCF80002B61A /* InputViewController.swift */,
 				4A6306D62049CCF80002B61A /* Main.storyboard */,
 				4A6306D92049CCF80002B61A /* Assets.xcassets */,
 				4A6306DB2049CCF80002B61A /* LaunchScreen.storyboard */,
 				4A6306DE2049CCF80002B61A /* Info.plist */,
+				49605571204AA92A00058D43 /* OutputViewController.swift */,
 			);
 			path = LiveTimeCounter;
 			sourceTree = "<group>";
@@ -136,7 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A6306D52049CCF80002B61A /* ViewController.swift in Sources */,
+				4A6306D52049CCF80002B61A /* InputViewController.swift in Sources */,
+				49605572204AA92A00058D43 /* OutputViewController.swift in Sources */,
 				4A6306D32049CCF80002B61A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,8 +279,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P33F9ZDJEG;
+				DEVELOPMENT_TEAM = 6TJQ2AFF8T;
 				INFOPLIST_FILE = LiveTimeCounter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.g2323.LiveTimeCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,8 +295,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P33F9ZDJEG;
+				DEVELOPMENT_TEAM = 6TJQ2AFF8T;
 				INFOPLIST_FILE = LiveTimeCounter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.g2323.LiveTimeCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
