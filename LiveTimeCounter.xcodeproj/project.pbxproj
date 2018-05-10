@@ -13,6 +13,7 @@
 		4A6306D82049CCF80002B61A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A6306D62049CCF80002B61A /* Main.storyboard */; };
 		4A6306DA2049CCF80002B61A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A6306D92049CCF80002B61A /* Assets.xcassets */; };
 		4A6306DD2049CCF80002B61A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A6306DB2049CCF80002B61A /* LaunchScreen.storyboard */; };
+		4A655BBE207E799E0036D3E9 /* GP2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A655BBD207E799E0036D3E9 /* GP2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4A6306D92049CCF80002B61A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A6306DC2049CCF80002B61A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A6306DE2049CCF80002B61A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A655BBD207E799E0036D3E9 /* GP2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GP2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		4A6306D12049CCF70002B61A /* LiveTimeCounter */ = {
 			isa = PBXGroup;
 			children = (
+				4A655BBD207E799E0036D3E9 /* GP2.png */,
 				4A6306D22049CCF80002B61A /* AppDelegate.swift */,
 				4A6306D42049CCF80002B61A /* InputViewController.swift */,
 				4A6306D62049CCF80002B61A /* Main.storyboard */,
@@ -95,7 +98,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = G2323;
+				ORGANIZATIONNAME = "PSI Logistics GmbH";
 				TargetAttributes = {
 					4A6306CE2049CCF70002B61A = {
 						CreatedOnToolsVersion = 9.2;
@@ -129,6 +132,7 @@
 				4A6306DD2049CCF80002B61A /* LaunchScreen.storyboard in Resources */,
 				4A6306DA2049CCF80002B61A /* Assets.xcassets in Resources */,
 				4A6306D82049CCF80002B61A /* Main.storyboard in Resources */,
+				4A655BBE207E799E0036D3E9 /* GP2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,11 +283,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6TJQ2AFF8T;
+				DEVELOPMENT_TEAM = P33F9ZDJEG;
 				INFOPLIST_FILE = LiveTimeCounter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.g2323.LiveTimeCounter;
+				PRODUCT_BUNDLE_IDENTIFIER = org.g2323.GPLiveTimeCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -295,11 +299,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6TJQ2AFF8T;
+				DEVELOPMENT_TEAM = P33F9ZDJEG;
 				INFOPLIST_FILE = LiveTimeCounter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.g2323.LiveTimeCounter;
+				PRODUCT_BUNDLE_IDENTIFIER = org.g2323.GPLiveTimeCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

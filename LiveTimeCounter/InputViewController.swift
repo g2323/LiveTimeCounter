@@ -11,6 +11,7 @@ import UIKit
 class InputViewController: UIViewController {
 
     @IBOutlet weak var inputDatePicker: UIDatePicker!
+    @IBOutlet weak var inputTimePicker: UIDatePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,10 +24,12 @@ class InputViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("habe auf den Knopf gedrückt: \(inputDatePicker.date.description)");
+        print("habe auf den Knopf gedrückt: \(inputDatePicker.date.description) \(inputTimePicker.date.description)");
         if (segue.identifier == "calculate") {
             let outputViewController = segue.destination as! OutputViewController
-            outputViewController.result = inputDatePicker.date.description
+            outputViewController.resultDate = inputDatePicker.date
+            
+            
             
         }
     }
