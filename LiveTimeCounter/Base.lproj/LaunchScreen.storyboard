@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GP2.png" translatesAutoresizingMaskIntoConstraints="NO" id="eYT-fW-vIh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-1024.png" translatesAutoresizingMaskIntoConstraints="NO" id="eYT-fW-vIh">
                                 <rect key="frame" x="20" y="40" width="335" height="607"/>
                             </imageView>
                         </subviews>
@@ -37,6 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="GP2.png" width="1024" height="1024"/>
+        <image name="icon-1024.png" width="1024" height="1024"/>
     </resources>
 </document>

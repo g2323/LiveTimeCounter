@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		49605572204AA92A00058D43 /* OutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49605571204AA92A00058D43 /* OutputViewController.swift */; };
 		4A6306D32049CCF80002B61A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6306D22049CCF80002B61A /* AppDelegate.swift */; };
-		4A6306D52049CCF80002B61A /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6306D42049CCF80002B61A /* InputViewController.swift */; };
+		4A6306D52049CCF80002B61A /* PropertiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6306D42049CCF80002B61A /* PropertiesViewController.swift */; };
 		4A6306D82049CCF80002B61A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A6306D62049CCF80002B61A /* Main.storyboard */; };
 		4A6306DA2049CCF80002B61A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A6306D92049CCF80002B61A /* Assets.xcassets */; };
 		4A6306DD2049CCF80002B61A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A6306DB2049CCF80002B61A /* LaunchScreen.storyboard */; };
 		4A655BBE207E799E0036D3E9 /* GP2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A655BBD207E799E0036D3E9 /* GP2.png */; };
+		4A96DA4720A4446200224BB8 /* CounterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96DA4620A4446200224BB8 /* CounterModel.swift */; };
+		4A96DA4920A45CFB00224BB8 /* CounterDefault.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DA4820A45CFB00224BB8 /* CounterDefault.JPG */; };
+		4A96DA4B20A49C2600224BB8 /* icon-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DA4A20A49C2600224BB8 /* icon-1024.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		49605571204AA92A00058D43 /* OutputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputViewController.swift; sourceTree = "<group>"; };
 		4A6306CF2049CCF70002B61A /* LiveTimeCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveTimeCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A6306D22049CCF80002B61A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A6306D42049CCF80002B61A /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		4A6306D42049CCF80002B61A /* PropertiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesViewController.swift; sourceTree = "<group>"; };
 		4A6306D72049CCF80002B61A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A6306D92049CCF80002B61A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A6306DC2049CCF80002B61A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A6306DE2049CCF80002B61A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A655BBD207E799E0036D3E9 /* GP2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GP2.png; sourceTree = "<group>"; };
+		4A96DA4620A4446200224BB8 /* CounterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterModel.swift; sourceTree = "<group>"; };
+		4A96DA4820A45CFB00224BB8 /* CounterDefault.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CounterDefault.JPG; sourceTree = "<group>"; };
+		4A96DA4A20A49C2600224BB8 /* icon-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-1024.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +64,17 @@
 		4A6306D12049CCF70002B61A /* LiveTimeCounter */ = {
 			isa = PBXGroup;
 			children = (
+				4A96DA4A20A49C2600224BB8 /* icon-1024.png */,
+				4A96DA4820A45CFB00224BB8 /* CounterDefault.JPG */,
 				4A655BBD207E799E0036D3E9 /* GP2.png */,
 				4A6306D22049CCF80002B61A /* AppDelegate.swift */,
-				4A6306D42049CCF80002B61A /* InputViewController.swift */,
+				4A6306D42049CCF80002B61A /* PropertiesViewController.swift */,
 				4A6306D62049CCF80002B61A /* Main.storyboard */,
 				4A6306D92049CCF80002B61A /* Assets.xcassets */,
 				4A6306DB2049CCF80002B61A /* LaunchScreen.storyboard */,
 				4A6306DE2049CCF80002B61A /* Info.plist */,
 				49605571204AA92A00058D43 /* OutputViewController.swift */,
+				4A96DA4620A4446200224BB8 /* CounterModel.swift */,
 			);
 			path = LiveTimeCounter;
 			sourceTree = "<group>";
@@ -97,7 +106,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "PSI Logistics GmbH";
 				TargetAttributes = {
 					4A6306CE2049CCF70002B61A = {
@@ -129,8 +138,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A96DA4920A45CFB00224BB8 /* CounterDefault.JPG in Resources */,
 				4A6306DD2049CCF80002B61A /* LaunchScreen.storyboard in Resources */,
 				4A6306DA2049CCF80002B61A /* Assets.xcassets in Resources */,
+				4A96DA4B20A49C2600224BB8 /* icon-1024.png in Resources */,
 				4A6306D82049CCF80002B61A /* Main.storyboard in Resources */,
 				4A655BBE207E799E0036D3E9 /* GP2.png in Resources */,
 			);
@@ -143,8 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A6306D52049CCF80002B61A /* InputViewController.swift in Sources */,
+				4A6306D52049CCF80002B61A /* PropertiesViewController.swift in Sources */,
 				49605572204AA92A00058D43 /* OutputViewController.swift in Sources */,
+				4A96DA4720A4446200224BB8 /* CounterModel.swift in Sources */,
 				4A6306D32049CCF80002B61A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,6 +197,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -192,6 +205,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -242,6 +256,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -249,6 +264,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
