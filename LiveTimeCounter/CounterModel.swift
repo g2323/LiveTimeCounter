@@ -27,9 +27,24 @@ class CounterModel : NSObject {
     var image : UIImage? = nil
     
     override init() {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
-        anchorDate = dateFormatter.date(from: "1968-05-18 08:36")!
+        print("init")
+        //let dateFormatter = DateFormatter()
+        //dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+        //anchorDate = dateFormatter.date(from: "1968-05-18 08:36")!
+        anchorDate = UserDefaultsManager.anchorDate
+        message = UserDefaultsManager.message
+        messageZero = UserDefaultsManager.messageZero
+        image = UserDefaultsManager.image
+    }
+    
+    func persist() {
+        print("persist")
+        UserDefaultsManager.anchorDate = anchorDate
+        UserDefaultsManager.message = message
+        UserDefaultsManager.messageZero = messageZero
+        if (image != nil) {
+            UserDefaultsManager.image = image!
+        }
     }
     
 }

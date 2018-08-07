@@ -74,6 +74,8 @@ class PropertiesViewController: UIViewController, UINavigationControllerDelegate
             CounterModel.shared().image = selectedImage
             //print("set new image");
         }
+        
+        CounterModel.shared().persist()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
