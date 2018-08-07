@@ -22,6 +22,10 @@ class OutputViewController: UIViewController {
     
     @IBOutlet weak var messageLabel: UILabel!
     
+    @IBAction func handleTap(_ sender: UITapGestureRecognizer) {
+        print("gedrückt")
+        performSegue(withIdentifier: "WebViewSegue", sender: self)
+    }
     //var resultDate: Date = Date();
     
     var timer: Timer!

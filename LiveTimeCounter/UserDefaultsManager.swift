@@ -15,6 +15,8 @@ class UserDefaultsManager {
     private static let messageKey = "message"
     private static let messageZeroKey = "messageZero"
     private static let imageKey = "image"
+    private static let URLKey = "URL"
+    
     
     static var anchorDate: Date {
         get {
@@ -66,8 +68,23 @@ class UserDefaultsManager {
             return retval
         }
         set {
-            var encodedData = NSKeyedArchiver.archivedData(withRootObject: newValue)
-            UserDefaults.standard.set(encodedData, forKey: imageKey)
+            if (image != nil) {
+                let encodedData = NSKeyedArchiver.archivedData(withRootObject: newValue!)
+                UserDefaults.standard.set(encodedData, forKey: imageKey)
+            }
+        }
+    }
+    
+    static var url: URL? {
+        get {
+            let retval : URL? = URL(string: "http://www.psilogistics.com")
+            if (UserDefaults.standard.object(forKey: URLKey) != nil) {
+                return UserDefaults.standard.object(forKey: URLKey) as? URL
+            }
+            return retval
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: URLKey)
         }
     }
     

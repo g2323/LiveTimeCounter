@@ -25,9 +25,10 @@ class CounterModel : NSObject {
     var message : String = ""
     var messageZero : String = ""
     var image : UIImage? = nil
+    var url : URL? = URL(string: "http://www.psilogistics.com")
     
     override init() {
-        print("init")
+        //print("init")
         //let dateFormatter = DateFormatter()
         //dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
         //anchorDate = dateFormatter.date(from: "1968-05-18 08:36")!
@@ -35,15 +36,19 @@ class CounterModel : NSObject {
         message = UserDefaultsManager.message
         messageZero = UserDefaultsManager.messageZero
         image = UserDefaultsManager.image
+        url = UserDefaultsManager.url
     }
     
     func persist() {
-        print("persist")
+        //print("persist")
         UserDefaultsManager.anchorDate = anchorDate
         UserDefaultsManager.message = message
         UserDefaultsManager.messageZero = messageZero
         if (image != nil) {
             UserDefaultsManager.image = image!
+        }
+        if (url != nil) {
+            UserDefaultsManager.url = url!
         }
     }
     

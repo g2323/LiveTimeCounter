@@ -17,6 +17,7 @@
 		4A96DA4920A45CFB00224BB8 /* CounterDefault.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DA4820A45CFB00224BB8 /* CounterDefault.JPG */; };
 		4A96DA4B20A49C2600224BB8 /* icon-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A96DA4A20A49C2600224BB8 /* icon-1024.png */; };
 		4AFF4A9A2119D0A7001AD77D /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFF4A992119D0A7001AD77D /* UserDefaultsManager.swift */; };
+		4AFF4A9C211A2BC5001AD77D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFF4A9B211A2BC5001AD77D /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		4A96DA4820A45CFB00224BB8 /* CounterDefault.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CounterDefault.JPG; sourceTree = "<group>"; };
 		4A96DA4A20A49C2600224BB8 /* icon-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-1024.png"; sourceTree = "<group>"; };
 		4AFF4A992119D0A7001AD77D /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		4AFF4A9B211A2BC5001AD77D /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				49605571204AA92A00058D43 /* OutputViewController.swift */,
 				4A96DA4620A4446200224BB8 /* CounterModel.swift */,
 				4AFF4A992119D0A7001AD77D /* UserDefaultsManager.swift */,
+				4AFF4A9B211A2BC5001AD77D /* WebViewController.swift */,
 			);
 			path = LiveTimeCounter;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A6306D52049CCF80002B61A /* PropertiesViewController.swift in Sources */,
+				4AFF4A9C211A2BC5001AD77D /* WebViewController.swift in Sources */,
 				4AFF4A9A2119D0A7001AD77D /* UserDefaultsManager.swift in Sources */,
 				49605572204AA92A00058D43 /* OutputViewController.swift in Sources */,
 				4A96DA4720A4446200224BB8 /* CounterModel.swift in Sources */,
