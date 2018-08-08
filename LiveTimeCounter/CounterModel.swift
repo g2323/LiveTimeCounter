@@ -45,7 +45,7 @@ class CounterModel : NSObject {
         UserDefaultsManager.message = message
         UserDefaultsManager.messageZero = messageZero
         if (image != nil) {
-            UserDefaultsManager.image = image!
+            UserDefaultsManager.image = self.image
         }
         UserDefaultsManager.url = url
     }

@@ -63,14 +63,16 @@ class UserDefaultsManager {
             if (UserDefaults.standard.object(forKey: imageKey) != nil) {
                 let encodedData = UserDefaults.standard.object(forKey: imageKey) as! Data
                 let decodedData = NSKeyedUnarchiver.unarchiveObject(with: encodedData)
+                //print("got image from user defaults")
                 return decodedData as? UIImage
             }
             return retval
         }
         set {
-            if (image != nil) {
+            if (newValue != nil) {
                 let encodedData = NSKeyedArchiver.archivedData(withRootObject: newValue!)
                 UserDefaults.standard.set(encodedData, forKey: imageKey)
+                //print("save image to user defaults")
             }
         }
     }
