@@ -18,6 +18,7 @@ class PropertiesViewController: UIViewController, UINavigationControllerDelegate
     
     @IBOutlet weak var messageText: UITextField!
     @IBOutlet weak var eventMessageText: UITextField!
+    @IBOutlet weak var urlText: UITextField!
     
     
     @IBAction func photoButton(_ sender: UIButton) {
@@ -33,9 +34,14 @@ class PropertiesViewController: UIViewController, UINavigationControllerDelegate
         self.view.endEditing(true)
     }
     
-    @IBAction func eventMessageTestEndEdit(_ sender: Any) {
+    @IBAction func eventMessageTextEndEdit(_ sender: Any) {
         self.view.endEditing(true)
     }
+    @IBAction func urlTextDidEndOnExit(_ sender: Any) {
+        self.view.endEditing(true)
+    }
+    
+    
     
     var imagePickerController = UIImagePickerController()
     var selectedImage: UIImage? = nil
@@ -49,6 +55,7 @@ class PropertiesViewController: UIViewController, UINavigationControllerDelegate
         
         messageText.text = CounterModel.shared().message
         eventMessageText.text = CounterModel.shared().messageZero
+        urlText.text = CounterModel.shared().url.absoluteString
         
         imagePickerController.modalPresentationStyle = .currentContext
         imagePickerController.delegate = self
@@ -69,6 +76,7 @@ class PropertiesViewController: UIViewController, UINavigationControllerDelegate
         CounterModel.shared().anchorDate = date2!
         CounterModel.shared().message = messageText.text ?? ""
         CounterModel.shared().messageZero = eventMessageText.text ?? ""
+        CounterModel.shared().url = URL(string: urlText.text ?? "www.psilogistics.com")!
         
         if (selectedImage != nil) {
             CounterModel.shared().image = selectedImage

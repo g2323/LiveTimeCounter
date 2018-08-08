@@ -10,18 +10,22 @@ import Foundation
 import UIKit
 import WebKit
 
-class WebViewController: UIViewController {
+class WebViewController: UIViewController, WKUIDelegate {
     
-    @IBOutlet weak var myWebView: WKWebView!
+
+    @IBOutlet weak var webView: WKWebView!
     
+    override func loadView() {
+        let webConfiguration = WKWebViewConfiguration()
+        self.webView = WKWebView(frame: .zero, configuration: webConfiguration)
+        self.webView.uiDelegate = self
+        self.view = self.webView
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-        let url = URL (string: "http://www.psilogistics.com");
-        let requestObj = URLRequest(url: url!);
-        myWebView.load(requestObj);
+        let requestObj = URLRequest(url: CounterModel.shared().url);
+        webView.load(requestObj);
         
     }
     

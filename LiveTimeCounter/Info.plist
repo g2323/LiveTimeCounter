@@ -4,6 +4,11 @@
 <dict>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>please allow access to photo library</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

@@ -75,16 +75,19 @@ class UserDefaultsManager {
         }
     }
     
-    static var url: URL? {
+    static var url: URL {
         get {
-            let retval : URL? = URL(string: "http://www.psilogistics.com")
+            var retval : URL = URL(string: "http://www.psilogistics.com")!
             if (UserDefaults.standard.object(forKey: URLKey) != nil) {
-                return UserDefaults.standard.object(forKey: URLKey) as? URL
+                    let obj = UserDefaults.standard.object(forKey: URLKey)
+                if (obj != nil) {
+                    retval = URL(string: obj as! String)!
+                }
             }
             return retval
         }
         set {
-            UserDefaults.standard.set(newValue, forKey: URLKey)
+            UserDefaults.standard.set(newValue.absoluteString, forKey: URLKey)
         }
     }
     

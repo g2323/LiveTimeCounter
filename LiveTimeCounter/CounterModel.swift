@@ -25,7 +25,7 @@ class CounterModel : NSObject {
     var message : String = ""
     var messageZero : String = ""
     var image : UIImage? = nil
-    var url : URL? = URL(string: "http://www.psilogistics.com")
+    var url : URL = URL(string: "www.psilogistics.com")!
     
     override init() {
         //print("init")
@@ -47,9 +47,7 @@ class CounterModel : NSObject {
         if (image != nil) {
             UserDefaultsManager.image = image!
         }
-        if (url != nil) {
-            UserDefaultsManager.url = url!
-        }
+        UserDefaultsManager.url = url
     }
     
 }
