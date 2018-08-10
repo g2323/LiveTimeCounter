@@ -239,10 +239,16 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="936"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SXQ-ph-3hy">
-                                        <rect key="frame" x="0.0" y="0.0" width="640" height="608"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="640" height="648.5"/>
                                         <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select date and time of your event" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D0l-xp-kot">
+                                                <rect key="frame" x="100" y="0.0" width="440" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iwD-PF-I9q">
-                                                <rect key="frame" x="0.0" y="0.0" width="640" height="216"/>
+                                                <rect key="frame" x="0.0" y="40.5" width="640" height="216"/>
                                                 <subviews>
                                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="LGr-Be-8Mx">
                                                         <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
@@ -259,11 +265,27 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B4J-6f-kgG">
-                                                <rect key="frame" x="100" y="236" width="440" height="200"/>
+                                                <rect key="frame" x="100" y="276.5" width="440" height="200"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDW-r8-ZTr">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vDW-r8-ZTr">
                                                         <rect key="frame" x="0.0" y="0.0" width="220" height="200"/>
-                                                        <state key="normal" title="Select Photo"/>
+                                                        <state key="normal">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment>
+                                                                    <string key="content">Select new</string>
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                                <fragment content="background photo">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
                                                         <connections>
                                                             <action selector="photoButton:" destination="szo-IK-O7g" eventType="touchUpInside" id="fUa-mV-oIA"/>
                                                         </connections>
@@ -277,7 +299,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Blg-cA-wzl">
-                                                <rect key="frame" x="100" y="456" width="440" height="30"/>
+                                                <rect key="frame" x="100" y="496.5" width="440" height="30"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJk-u5-lYR">
                                                         <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
@@ -303,7 +325,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3PX-ij-Sxj">
-                                                <rect key="frame" x="100" y="506" width="440" height="41"/>
+                                                <rect key="frame" x="100" y="546.5" width="440" height="41"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message to be displayed at time zero" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qR-f7-Y9f">
                                                         <rect key="frame" x="0.0" y="0.0" width="210" height="41"/>
@@ -323,7 +345,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hp0-Wu-S0d">
-                                                <rect key="frame" x="100" y="567" width="440" height="41"/>
+                                                <rect key="frame" x="100" y="607.5" width="440" height="41"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event landing page. Triple tap on main screen." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAT-Pn-xJk">
                                                         <rect key="frame" x="0.0" y="0.0" width="220" height="41"/>
@@ -351,6 +373,7 @@
                                             <constraint firstItem="7Rn-Dc-TZZ" firstAttribute="leading" secondItem="UM9-xA-7Vu" secondAttribute="leading" id="Y6w-zd-6hl"/>
                                             <constraint firstItem="ffW-bd-Np3" firstAttribute="leading" secondItem="UM9-xA-7Vu" secondAttribute="leading" id="YI1-mN-cGt"/>
                                             <constraint firstItem="Snz-BW-9n1" firstAttribute="leading" secondItem="UM9-xA-7Vu" secondAttribute="leading" id="afA-is-Lw9"/>
+                                            <constraint firstItem="LJk-u5-lYR" firstAttribute="leading" secondItem="D0l-xp-kot" secondAttribute="leading" id="bkP-Ny-Jlc"/>
                                             <constraint firstItem="ffW-bd-Np3" firstAttribute="leading" secondItem="7Rn-Dc-TZZ" secondAttribute="leading" id="r1V-dH-vhe"/>
                                         </constraints>
                                     </stackView>

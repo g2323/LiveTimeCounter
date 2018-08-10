@@ -83,7 +83,9 @@ class UserDefaultsManager {
             if (UserDefaults.standard.object(forKey: URLKey) != nil) {
                     let obj = UserDefaults.standard.object(forKey: URLKey)
                 if (obj != nil) {
-                    retval = URL(string: obj as! String)!
+                    if let str = obj as? String {
+                        retval = URL(string: str)!
+                    }
                 }
             }
             return retval
