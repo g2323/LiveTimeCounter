@@ -7,8 +7,8 @@
 //
 
 import UIKit
-
 import AVFoundation
+import Photos
 
 class PropertiesViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
@@ -20,13 +20,16 @@ class PropertiesViewController: UIViewController, UINavigationControllerDelegate
     @IBOutlet weak var eventMessageText: UITextField!
     @IBOutlet weak var urlText: UITextField!
     
+    @IBOutlet weak var photoButton: UIButton!
     
     @IBAction func photoButton(_ sender: UIButton) {
-        imagePickerController.allowsEditing = false
-        imagePickerController.sourceType = .photoLibrary
-        imagePickerController.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
-        present(imagePickerController, animated: true) {
-            // nil
+        if (accessPhotos) {
+            imagePickerController.allowsEditing = false
+            imagePickerController.sourceType = .photoLibrary
+            imagePickerController.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
+            present(imagePickerController, animated: true) {
+                // nil
+            }
         }
     }
     
@@ -45,6 +48,7 @@ class PropertiesViewController: UIViewController, UINavigationControllerDelegate
     
     var imagePickerController = UIImagePickerController()
     var selectedImage: UIImage? = nil
+    var accessPhotos = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,8 +61,12 @@ class PropertiesViewController: UIViewController, UINavigationControllerDelegate
         eventMessageText.text = CounterModel.shared().messageZero
         urlText.text = CounterModel.shared().url.absoluteString
         
+        checkPhotoLibraryPermission()
+        
         imagePickerController.modalPresentationStyle = .currentContext
         imagePickerController.delegate = self
+        
+        
        
       
     }
@@ -110,6 +118,44 @@ class PropertiesViewController: UIViewController, UINavigationControllerDelegate
         }
         dismiss(animated: true) {
             // nil
+        }
+    }
+    
+    func checkPhotoLibraryPermission() {
+        let status = PHPhotoLibrary.authorizationStatus()
+        switch status {
+        case .authorized:
+            self.enableImagePicker()
+        case .denied, .restricted :
+            self.disableImagePicker()
+        case .notDetermined:
+            PHPhotoLibrary.requestAuthorization() { status in
+                switch status {
+                case .authorized:
+                    self.enableImagePicker()
+                case .denied, .restricted:
+                    self.disableImagePicker()
+                case .notDetermined:
+                    print("this won't happen")
+                }
+            }
+        }
+    }
+    
+    func enableImagePicker() {
+        accessPhotos = true
+        DispatchQueue.main.async {
+            self.photoButton.isEnabled = true
+            self.photoButton.alpha = 1.0
+        }
+        
+    }
+    
+    func disableImagePicker() {
+        accessPhotos = false
+        DispatchQueue.main.async {
+            self.photoButton.isEnabled = false
+            self.photoButton.alpha = 0.3
         }
     }
 

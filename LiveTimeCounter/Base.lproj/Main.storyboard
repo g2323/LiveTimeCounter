@@ -272,7 +272,8 @@
                                                         <state key="normal">
                                                             <attributedString key="attributedTitle">
                                                                 <fragment>
-                                                                    <string key="content">Select new</string>
+                                                                    <string key="content">Select new
+</string>
                                                                     <attributes>
                                                                         <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -403,6 +404,7 @@
                         <outlet property="eventMessageText" destination="7Rn-Dc-TZZ" id="NuX-nA-uwd"/>
                         <outlet property="imageView" destination="UM9-xA-7Vu" id="q0u-oW-DpM"/>
                         <outlet property="messageText" destination="Snz-BW-9n1" id="3AM-Zw-Om0"/>
+                        <outlet property="photoButton" destination="vDW-r8-ZTr" id="Fyv-P7-KAS"/>
                         <outlet property="urlText" destination="ffW-bd-Np3" id="Pux-M4-4jh"/>
                     </connections>
                 </viewController>
